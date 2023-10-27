@@ -154,7 +154,6 @@ GameObject:
   - component: {fileID: 144782344955691819}
   - component: {fileID: 5958288652565932581}
   - component: {fileID: 2128638156767946209}
-  - component: {fileID: 8620814511590779404}
   m_Layer: 0
   m_Name: "\u0418\u0433\u0440\u043E\u0432\u043E\u0439 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u0436"
   m_TagString: Untagged
@@ -223,27 +222,6 @@ MonoBehaviour:
   force: {x: 0, y: 10, z: 0}
   forceMode: 1
   forceMode2D: 1
---- !u!95 &8620814511590779404
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2750733343597719283}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 32cda936875f1744988cbf9045da9c53, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2812925729177337402
 GameObject:
   m_ObjectHideFlags: 0

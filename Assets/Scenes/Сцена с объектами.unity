@@ -505,12 +505,16 @@ PrefabInstance:
       value: Person
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 5b2a8dabff779414fb58defeb473859c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5b2a8dabff779414fb58defeb473859c, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: cbd1db45c75e5b948a5befe9ecb80421, type: 2}
+      objectReference: {fileID: 9100000, guid: 195df8189c511b542997cf709b56031a, type: 2}
     - target: {fileID: 5866666021909216657, guid: 5b2a8dabff779414fb58defeb473859c, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

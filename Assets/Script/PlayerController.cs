@@ -33,9 +33,14 @@ public class Co : MonoBehaviour
             Vector3 move = Quaternion.Euler(0f, rotation, 0f) * Vector3.forward;
 
             //controller.Move(move.normalized * speed * Time.deltaTime);
+            
         }
-
         animator.SetFloat("InputMagnitude", directionVector.magnitude);
         rigidbody.velocity = directionVector * speed;
+        
+        //if (Input.GetButtonUp("Fire1")) animator.SetBool("Attack", true);
+        //else if (Input.GetButtonUp("Fire1")) animator.SetBool("Attack", false);
+        
     }
+    
 }

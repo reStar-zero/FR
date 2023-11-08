@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class AttackScript : MonoBehaviour
 {
     private Animator animator;
-    // Start is called before the first frame update
+    [SerializeField] private Collider weaponCollider;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -13,15 +14,21 @@ public class AttackScript : MonoBehaviour
 
        void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Mouse0)) animator.SetTrigger("Attack 0");
         if (Input.GetButtonUp("Fire1"))
         {
             animator.SetBool("Attack", true);
         }
         else
         {
-            //(Input.GetButtonUp("Fire1"))
             animator.SetBool("Attack", false);
         }
     }
-}
+    public void AttackColliderOn()
+    {
+        weaponCollider.enabled = true;
+    }
+    public void AttackColliderOff()
+    {
+        weaponCollider.enabled = false;
+    }
+ }

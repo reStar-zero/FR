@@ -72,8 +72,9 @@ public class GPT : MonoBehaviour
 
     private void Dash()
     {
-        rigidbody.velocity = Vector3.zero;
-        rigidbody.AddForce(directionVector * dashForce);
+        rigidbody.velocity = directionVector * dashForce;
+        lastDash = Time.time;
+        isDashing = true;
     }
 
     private void SmoothRotate(Vector3 directionVector)

@@ -5,24 +5,14 @@ using UnityEngine;
 
 public class AttackScript : MonoBehaviour
 {
-    private Animator animator;
+
     [SerializeField] private Collider weaponCollider;
-    void Start()
+    private PlayerController controller;
+    private void Awake()
     {
-        animator = GetComponent<Animator>();
+        controller = GetComponent<PlayerController>();        
     }
 
-       void Update()
-    {
-        if (Input.GetButtonUp("Fire1"))
-        {
-            animator.SetBool("Attack", true);
-        }
-        else
-        {
-            animator.SetBool("Attack", false);
-        }
-    }
     public void AttackColliderOn()
     {
         weaponCollider.enabled = true;

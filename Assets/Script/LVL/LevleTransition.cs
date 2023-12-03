@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
-    public void GoToLevel()
+    public void GoToLevel(int csene)
     {
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene(csene);
     }
 }
 

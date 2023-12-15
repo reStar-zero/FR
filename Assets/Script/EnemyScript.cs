@@ -6,12 +6,17 @@ using UnityEngine.UI;
 public class EnemyScript : MonoBehaviour
 {
     private int HP = 100;
+    private KillCounter counter;
     public Animator animator;
     public Slider healthBar;
 
     void Update()
     {
-        healthBar.value = HP;  
+        healthBar.value = HP; 
+    }
+    private void Start()
+    {
+        counter = FindObjectOfType<KillCounter>();
     }
 
     public void TakeDamage(int damageAmount)
@@ -20,9 +25,11 @@ public class EnemyScript : MonoBehaviour
 
         if(HP <= 0)
         {
+            counter.Kill();
             animator.SetTrigger("Death");
             GetComponent<Collider>().enabled = false;
             healthBar.gameObject.SetActive(false);
+            //KillCounter.enemy += 1;
         }
         else
         {

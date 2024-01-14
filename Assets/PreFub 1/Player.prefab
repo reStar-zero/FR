@@ -979,8 +979,6 @@ GameObject:
   - component: {fileID: 2448518152651769402}
   - component: {fileID: 2428975365606123198}
   - component: {fileID: 4449271907357715170}
-  - component: {fileID: 8156261926900039884}
-  - component: {fileID: 8500233401109309467}
   - component: {fileID: 768112728222400013}
   m_Layer: 0
   m_Name: Player
@@ -1085,33 +1083,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.98, z: 0}
---- !u!114 &8156261926900039884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2791885402690119418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f8e6ad0c85444044a7deb0823ce5853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstCamera: {fileID: 565953427851914248}
-  smoothTime: 0.1
---- !u!114 &8500233401109309467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2791885402690119418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fa838e8282955947a13bde13d19f066, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponCollider: {fileID: 4358276951163835066}
 --- !u!136 &768112728222400013
 CapsuleCollider:
   m_ObjectHideFlags: 0
